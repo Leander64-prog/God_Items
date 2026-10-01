@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "customgoditems",
+	"version": "${version}",
+	"name": "CustomGodItems",
+	"description": "Ich hebe hier eine Mod mit OP/Gott Items gebaut. dies ist meine erste Mod also könnte sie ein Paar Fehler haben :D",
+	"authors": [
+		"Leander"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/customgoditems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.leander.customgoditems.CustomGodItems"
+		],
+		"fabric-datagen": [
+			"de.leander.customgoditems.CustomGodItemsDataGenerator"
+		],
+		"client":[
+			"de.leander.customgoditems.CustomGodItemsClient"
+		]
+	},
+	"mixins": [
+		"customgoditems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
